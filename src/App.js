@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import Main from './components/main';
 import { LLMDropdown, MoodDropdown } from './components/LLM-Dropdowns';
 import { Textarea } from './components/Textboxes';
+import { AutoRefreshPromptWindow, DisplayModelandMood } from './components/dynamicTextboxes';
 
 function App() {
   return (
@@ -20,9 +21,15 @@ function App() {
             <div class="rvt-cols-8-md rvt-flow rvt-prose">
               <div class="rvt-prose rvt-flow">
                 <div className="App">
-                  <h1>LLM response</h1>
-                  <p >This will be the response from the LLM.</p>
+                  <h1>Responses and Transcriptions</h1>
+                  <p>This is where you can read the response from NAO6 and read what NAO6 thought you said</p>
+                  <AutoRefreshPromptWindow />
                   <Textarea />
+
+                  <h1 style={{ marginTop: '50px' }}>Robot Settings</h1>
+                  <p>This is where you can see NAO6's status</p>
+                  <DisplayModelandMood />
+                  
                   <h1 style={{ marginTop: '50px' }}>Robot Settings</h1>
                   <p>This is where you can change the settings for the robot </p>
 

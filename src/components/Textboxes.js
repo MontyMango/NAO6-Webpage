@@ -1,4 +1,9 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import axios from "axios";
+
+const DELAYINSECONDS = 5
+const SENDTO = "http://149.161.65.104:43016/"
+
 
 const Textarea = () => {
     return (
@@ -11,15 +16,6 @@ const Textarea = () => {
     );
 }
 
-const Textinput = () => {
-    return (
-        <div>
-            <label for="text-input-default" class="rvt-label">Text Input</label>
-            <input type="text" id="text-input-default" class="rvt-text-input"></input>
-        </div>
-    )
-}
-
 function startListening() {
     console.log('Start request sent to the Backend');
 }
@@ -29,6 +25,5 @@ function stopListening() {
 }
 
 export {
-    Textarea,
-    Textinput
+    Textarea
 }

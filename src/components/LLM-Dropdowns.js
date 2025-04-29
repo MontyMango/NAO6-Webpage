@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
+
+const SENDTO = "http://149.161.65.104:43016/"
 
 const LLMDropdown = () => {
     return (
@@ -11,14 +13,16 @@ const LLMDropdown = () => {
                     <option value="deepseek-r1:14b">DeepSeek-R1 | 14b</option>
                     <option value="gemma3:12b">Gemma 3 | 12b</option>
                     <option value="llama3.2">Llama 3.2 | 3b</option>
-                    <option value="qwen2.5:0.5b">Qwen 2.5 | 0.5b</option>
                     <option value="qwen2.5:14b">Qwen 2.5 | 14b</option>
+                    <option value="qwen2.5:0.5b">Qwen 2.5 | 0.5b</option>
                 </select>
             </div>
 
             <div style={{ margin: '0px 25px', paddingTop: '30px' }}>
                 <button onClick={() => changeLLM()} class="rvt-button">Set LLM</button>
             </div>
+
+            
         </div>
     );
 }
@@ -34,6 +38,10 @@ const MoodDropdown = () => {
                     <option value="mad">Mad</option>
                     <option value="sassy">Sassy</option>
                     <option value="sad">Sad</option>
+                    <option value="jealous">Jealous</option>
+                    <option value="nervous">Nervous</option>
+                    <option value="nostalgic">Nostalgic</option>
+                    <option value="dynamic">Dynamic</option>
                 </select>
             </div>
 
@@ -45,7 +53,6 @@ const MoodDropdown = () => {
 }
 
 
-
 function changeLLM() {
     // Get the value data from the llm dropdown menu
     const moodDropdown = document.getElementsByName('llmDropdown');
@@ -53,15 +60,15 @@ function changeLLM() {
     console.log(`changeLLM called: ${newLLM}`);
 
     // Send data to the backend via POST
-    axios.post('http://127.0.0.1:45689/set_llm', {
+    axios.post(SENDTO + '/set_llm', {
         model: newLLM
     })
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => {
-            console.log('Error:', error);
-        });
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    });
 }
 
 function changeMood() {
@@ -71,15 +78,15 @@ function changeMood() {
     console.log(`changeMood called: ${newMood}`);
 
     // Send data to the backend via POST using Axios
-    axios.post('http://127.0.0.1:45689/set_mood', {
+    axios.post(SENDTO + '/set_mood', {
         mood: newMood
     })
-        .then(response => {
-            console.log(response.data); // Log the response data
-        })
-        .catch(error => {
-            console.error('Error:', error); // Log any errors
-        });
+    .then(response => {
+        console.log(response.data); // Log the response data
+    })
+    .catch(error => {
+        console.error('Error:', error); // Log any errors
+    });
 }
 
 export {
