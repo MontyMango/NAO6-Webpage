@@ -1,9 +1,4 @@
-import React, { useEffect, useState } from "react"
-import axios from "axios";
-
-const DELAYINSECONDS = 5
-const SENDTO = "http://149.161.65.104:43016/"
-
+import React from "react"
 
 const Textarea = () => {
     return (

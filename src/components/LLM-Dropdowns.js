@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 
 const SENDTO = "http://149.161.65.104:43016/"
