@@ -14,7 +14,7 @@ const Main = () => {
                 <p>Check out this chatbot built with NAO6 robot and LLMs.</p>
               </div>
               <div class="rvt-hero__actions">
-                <a class="rvt-cta rvt-cta--button" href="#0">Learn More</a>
+                <a class="rvt-cta rvt-cta--button" href="http://localhost:3000/chat">Learn More</a>
               </div>
             </div>
             <div class="rvt-hero__media">
@@ -24,7 +24,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <p>Welcome to my React app! This is the body section.</p>
     </main>
   );
 };
