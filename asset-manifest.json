@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//montymango.github.io/nao6-webpage/static/css/main.e6c13ad2.css",
+    "main.js": "//montymango.github.io/nao6-webpage/static/js/main.90678efb.js",
+    "static/js/453.ed3810f9.chunk.js": "//montymango.github.io/nao6-webpage/static/js/453.ed3810f9.chunk.js",
+    "index.html": "//montymango.github.io/nao6-webpage/index.html",
+    "main.e6c13ad2.css.map": "//montymango.github.io/nao6-webpage/static/css/main.e6c13ad2.css.map",
+    "main.90678efb.js.map": "//montymango.github.io/nao6-webpage/static/js/main.90678efb.js.map",
+    "453.ed3810f9.chunk.js.map": "//montymango.github.io/nao6-webpage/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.90678efb.js"
+  ]
+}
