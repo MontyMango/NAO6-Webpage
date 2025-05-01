@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NAO6-Webpage/static/css/main.e6c13ad2.css",
-    "main.js": "/NAO6-Webpage/static/js/main.11a273b7.js",
+    "main.js": "/NAO6-Webpage/static/js/main.61b68297.js",
     "static/js/453.ed3810f9.chunk.js": "/NAO6-Webpage/static/js/453.ed3810f9.chunk.js",
     "index.html": "/NAO6-Webpage/index.html",
     "main.e6c13ad2.css.map": "/NAO6-Webpage/static/css/main.e6c13ad2.css.map",
-    "main.11a273b7.js.map": "/NAO6-Webpage/static/js/main.11a273b7.js.map",
+    "main.61b68297.js.map": "/NAO6-Webpage/static/js/main.61b68297.js.map",
     "453.ed3810f9.chunk.js.map": "/NAO6-Webpage/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.11a273b7.js"
+    "static/js/main.61b68297.js"
   ]
 }
