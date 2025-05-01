@@ -38,6 +38,10 @@ const MoodDropdown = () => {
                     <option value="mad">Mad</option>
                     <option value="sassy">Sassy</option>
                     <option value="sad">Sad</option>
+                    <option value="talkative">Talkative</option>
+                    <option value="submissive">Submissive</option>
+                    <option value="switch">Switch</option>
+                    <option value="dominating">Dominating</option>
                     <option value="jealous">Jealous</option>
                     <option value="nervous">Nervous</option>
                     <option value="nostalgic">Nostalgic</option>

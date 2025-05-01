@@ -55,9 +55,9 @@ const AutoRefreshPromptWindow = () =>   {
   }
   return (
     <div style={{paddingTop: `15px`}}>
-        <h2>Response from NAO6</h2>
+        <h2 style={{textAlign: `left`}}>Response from NAO6</h2>
         <p style={{overflowX: `hidden`, overflowY: `auto`}}>{JSON.stringify(responseData, null, 2)}</p>
-        <h2>What NAO6 heard you say:</h2>
+        <h2 style={{textAlign: `left`}}>What NAO6 heard you say:</h2>
         <p style={{overflowX: `hidden`, overflowY: `auto`}}>{JSON.stringify(transcriptionData, null, 2)}</p>
     </div>
   );
@@ -112,11 +112,11 @@ const DisplayModelandMood = () =>   {
       <div style={{paddingTop: `15px`}}>
         <div style={{overflowX: `hidden`, overflowY: `auto`}}>
           <h5>NAO6 is currently feeling:</h5>
-          <pre>{JSON.stringify(moodData, null, 2)}</pre>
+          <pre style={{padding: `10px 10px`}}>{JSON.stringify(moodData, null, 2)}</pre>
         </div>
         <div style={{overflowX: `hidden`, overflowY: `auto`}}>
           <h5>NAO6's current LLM is:</h5>
-          <pre>{JSON.stringify(llmData, null, 2)}</pre>
+          <pre style={{padding: `10px 10px`}}>{JSON.stringify(llmData, null, 2)}</pre>
         </div>
       </div>
     );

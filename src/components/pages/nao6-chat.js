@@ -7,9 +7,9 @@ import { LLMDropdown, MoodDropdown } from '../LLM-Dropdowns';
 const NAO6Chat = () => {
   return (
     <div>
-          <div class="rvt-bg-black-000 rvt-border-bottom rvt-p-top-xl">
-            <div class="rvt-container-lg rvt-prose rvt-flow rvt-p-bottom-xl">
-              <h1 class="rvt-m-top-xs">Send messages to NAO6</h1>
+        <div class="rvt-bg-black-000 rvt-border-bottom rvt-p-top-xl">
+          <div class="rvt-container-lg rvt-prose rvt-flow rvt-p-bottom-xl">
+            <h1 class="rvt-m-top-xs">NAO6 Chat</h1>
             </div>
           </div>
     
@@ -24,11 +24,11 @@ const NAO6Chat = () => {
                       <AutoRefreshPromptWindow />
                       <Textarea />
     
-                      <h1 style={{ marginTop: '50px' }}>Robot Settings</h1>
+                      <h1 style={{ marginTop: '50px' }}>NAO6's Statuses</h1>
                       <p>This is where you can see NAO6's status</p>
                       <DisplayModelandMood />
                       
-                      <h1 style={{ marginTop: '50px' }}>Robot Settings</h1>
+                      <h1 style={{ marginTop: '50px' }}>NAO6's Settings</h1>
                       <p>This is where you can change the settings for the robot </p>
     
                       <div style={{ margin: '0px 0px 15px 0px' }}>

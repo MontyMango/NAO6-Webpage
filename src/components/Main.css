@@ -1,0 +1,180 @@
+/* Main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .main-container {
+    padding: 20px;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #0052cc;
+    color: white;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .project-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #f1f1f1;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .about-project,
+  .technologies {
+    background-color: white;
+    padding: 40px 0;
+    margin-top: 20px;
+  }
+  
+  .about-project h2,
+  .technologies h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-project p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .technologies ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .technologies li {
+    background-color: #e0e0e0;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .about-project {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  ul li strong {
+    font-weight: bold;
+  }
+  .rvt-hero__media img {
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* Makes sure the entire image is visible */
+      display: block; /* Removes any extra bottom space from inline images */
+  }
