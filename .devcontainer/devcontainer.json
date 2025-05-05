@@ -8,7 +8,11 @@
 		"vscode": {
 			"extensions": [
 				"esbenp.prettier-vscode",
-				"nodesource.vscode-for-node-js-development-pack"
+				"christian-kohler.npm-intellisense",
+				"dbaeumer.vscode-eslint",
+				"kisstkondoros.vscode-codemetrics",
+				"wix.vscode-import-cost",
+				"ms-vsliveshare.vsliveshare"
 			]
 		}
 	}
