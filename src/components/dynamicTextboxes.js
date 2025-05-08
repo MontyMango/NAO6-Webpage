@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios";
 
-const DELAYINSECONDS = 5
+const DELAYINSECONDS = 1
 const SENDTO = "http://149.161.65.104:43016/"
 
 const AutoRefreshPromptWindow = () =>   {
@@ -54,10 +54,10 @@ const AutoRefreshPromptWindow = () =>   {
     )
   }
   return (
-    <div style={{paddingTop: `15px`}}>
-        <h2 style={{textAlign: `left`}}>Response from NAO6</h2>
+    <div>
+        <h3 style={{textAlign: `left`, marginTop: '5px'}}>Response from NAO6</h3>
         <p style={{overflowX: `hidden`, overflowY: `auto`}}>{JSON.stringify(responseData, null, 2)}</p>
-        <h2 style={{textAlign: `left`}}>What NAO6 heard you say:</h2>
+        <h3 style={{textAlign: `left`}}>What NAO6 heard you say:</h3>
         <p style={{overflowX: `hidden`, overflowY: `auto`}}>{JSON.stringify(transcriptionData, null, 2)}</p>
     </div>
   );
@@ -102,6 +102,9 @@ const DisplayModelandMood = () =>   {
       return <div>Loading...</div>;
     }
     else if (error) {
+      if (error == "") {
+        
+      }
       return (
         <div>
           <pre>Error: {error}</pre>
@@ -109,14 +112,14 @@ const DisplayModelandMood = () =>   {
       )
     }
     return (
-      <div style={{paddingTop: `15px`}}>
+      <div>
         <div style={{overflowX: `hidden`, overflowY: `auto`}}>
-          <h5>NAO6 is currently feeling:</h5>
-          <pre style={{padding: `10px 10px`}}>{JSON.stringify(moodData, null, 2)}</pre>
+          <h3 style={{marginTop: '0px'}}>NAO6 is currently feeling:</h3>
+          <p style={{paddingLeft: '15px'}}>{JSON.stringify(moodData, null, 2)}</p>
         </div>
-        <div style={{overflowX: `hidden`, overflowY: `auto`}}>
-          <h5>NAO6's current LLM is:</h5>
-          <pre style={{padding: `10px 10px`}}>{JSON.stringify(llmData, null, 2)}</pre>
+        <div style={{overflowX: `hidden`, overflowY: `auto`, }}>
+          <h3 style={{marginTop: '0px'}}>NAO6's current LLM is:</h3>
+          <p style={{paddingLeft: '15px'}}>{JSON.stringify(llmData, null, 2)}</p>
         </div>
       </div>
     );

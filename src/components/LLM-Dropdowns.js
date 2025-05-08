@@ -22,7 +22,7 @@ const LLMDropdown = () => {
                 <button onClick={() => changeLLM()} class="rvt-button">Set LLM</button>
             </div>
 
-            
+
         </div>
     );
 }
@@ -40,7 +40,6 @@ const MoodDropdown = () => {
                     <option value="sad">Sad</option>
                     <option value="talkative">Talkative</option>
                     <option value="submissive">Submissive</option>
-                    <option value="switch">Switch</option>
                     <option value="dominating">Dominating</option>
                     <option value="jealous">Jealous</option>
                     <option value="nervous">Nervous</option>
@@ -67,12 +66,12 @@ function changeLLM() {
     axios.post(SENDTO + '/set_llm', {
         model: newLLM
     })
-    .then(response => {
-        console.log(response.data);
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    });
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
 }
 
 function changeMood() {
@@ -85,12 +84,12 @@ function changeMood() {
     axios.post(SENDTO + '/set_mood', {
         mood: newMood
     })
-    .then(response => {
-        console.log(response.data); // Log the response data
-    })
-    .catch(error => {
-        console.error('Error:', error); // Log any errors
-    });
+        .then(response => {
+            console.log(response.data); // Log the response data
+        })
+        .catch(error => {
+            console.error('Error:', error); // Log any errors
+        });
 }
 
 export {
